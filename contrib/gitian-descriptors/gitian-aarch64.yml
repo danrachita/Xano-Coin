@@ -1,5 +1,5 @@
 ---
-name: "Xano-aarch64-1.2"
+name: "Xano-aarch64-2.0"
 enable_cache: true
 suites:
 - "trusty"
