@@ -594,7 +594,7 @@ case $basic_machine in
 		basic_machine=cr16-unknown
 		os=-elf
 		;;
-	crds | uXano)
+	crds | unos)
 		basic_machine=m68k-crds
 		;;
 	crisv32 | crisv32-* | etraxfs*)
@@ -1136,27 +1136,27 @@ case $basic_machine in
 		;;
 	sun2os3)
 		basic_machine=m68000-sun
-		os=-suXano3
+		os=-sunos3
 		;;
 	sun2os4)
 		basic_machine=m68000-sun
-		os=-suXano4
+		os=-sunos4
 		;;
 	sun3os3)
 		basic_machine=m68k-sun
-		os=-suXano3
+		os=-sunos3
 		;;
 	sun3os4)
 		basic_machine=m68k-sun
-		os=-suXano4
+		os=-sunos4
 		;;
 	sun4os3)
 		basic_machine=sparc-sun
-		os=-suXano3
+		os=-sunos3
 		;;
 	sun4os4)
 		basic_machine=sparc-sun
-		os=-suXano4
+		os=-sunos4
 		;;
 	sun4sol2)
 		basic_machine=sparc-sun
@@ -1365,7 +1365,7 @@ case $os in
 		os=-auroraux
 		;;
 	-solaris1 | -solaris1.*)
-		os=`echo $os | sed -e 's|solaris1|suXano4|'`
+		os=`echo $os | sed -e 's|solaris1|sunos4|'`
 		;;
 	-solaris)
 		os=-solaris2
@@ -1384,8 +1384,8 @@ case $os in
 	# Each alternative MUST END IN A *, to match a version number.
 	# -sysv* is not here because it comes later, after sysvr4.
 	-gnu* | -bsd* | -mach* | -minix* | -genix* | -ultrix* | -irix* \
-	      | -*vms* | -sco* | -esix* | -isc* | -aix* | -cnk* | -suXano | -suXano[34]*\
-	      | -hpux* | -uXano* | -osf* | -luna* | -dgux* | -auroraux* | -solaris* \
+	      | -*vms* | -sco* | -esix* | -isc* | -aix* | -cnk* | -sunos | -sunos[34]*\
+	      | -hpux* | -unos* | -osf* | -luna* | -dgux* | -auroraux* | -solaris* \
 	      | -sym* | -kopensolaris* | -plan9* \
 	      | -amigaos* | -amigados* | -msdos* | -newsos* | -unicos* | -aof* \
 	      | -aos* | -aros* | -cloudabi* | -sortix* \
@@ -1439,11 +1439,11 @@ case $os in
 	-linux*)
 		os=`echo $os | sed -e 's|linux|linux-gnu|'`
 		;;
-	-suXano5*)
-		os=`echo $os | sed -e 's|suXano5|solaris2|'`
+	-sunos5*)
+		os=`echo $os | sed -e 's|sunos5|solaris2|'`
 		;;
-	-suXano6*)
-		os=`echo $os | sed -e 's|suXano6|solaris3|'`
+	-sunos6*)
+		os=`echo $os | sed -e 's|sunos6|solaris3|'`
 		;;
 	-opened*)
 		os=-openedition
@@ -1612,10 +1612,10 @@ case $basic_machine in
 		os=-domain
 		;;
 	i386-sun)
-		os=-suXano4.0.2
+		os=-sunos4.0.2
 		;;
 	m68000-sun)
-		os=-suXano3
+		os=-sunos3
 		;;
 	m68*-cisco)
 		os=-aout
@@ -1636,7 +1636,7 @@ case $basic_machine in
 		os=-sysv3
 		;;
 	sparc-* | *-sun)
-		os=-suXano4.1.1
+		os=-sunos4.1.1
 		;;
 	pru-*)
 		os=-elf
@@ -1693,7 +1693,7 @@ case $basic_machine in
 		os=-ptx
 		;;
 	*-crds)
-		os=-uXano
+		os=-unos
 		;;
 	*-ns)
 		os=-genix
@@ -1752,7 +1752,7 @@ case $basic_machine in
 			-riscix*)
 				vendor=acorn
 				;;
-			-suXano*)
+			-sunos*)
 				vendor=sun
 				;;
 			-cnk*|-aix*)
@@ -1770,7 +1770,7 @@ case $basic_machine in
 			-hiux*)
 				vendor=hitachi
 				;;
-			-uXano*)
+			-unos*)
 				vendor=crds
 				;;
 			-dgux*)
