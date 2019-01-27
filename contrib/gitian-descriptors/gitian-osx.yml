@@ -1,5 +1,5 @@
 ---
-name: "Xano-osx-1.2"
+name: "Xano-osx-2.0"
 enable_cache: true
 suites:
 - "trusty"
