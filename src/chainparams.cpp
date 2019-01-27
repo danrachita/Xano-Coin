@@ -159,14 +159,21 @@ public:
         assert(hashGenesisBlock == uint256("0x00000716e656494e78f20f61bc5c737c2de518c15cd97fc3a59d79c809494556"));
         assert(genesis.hashMerkleRoot == uint256("0x177adcb383ef130e93fcb153822ffc86eac1765b73ad0d5b2765e3ac0f27ecd0"));
 		
-		vSeeds.push_back(CDNSSeedData("seeds.xano.org", "seeds.xano.org")); // Seeder
-        vSeeds.push_back(CDNSSeedData("209.250.241.176", "209.250.241.176"));     // Single node address
-        vSeeds.push_back(CDNSSeedData("209.250.243.131", "209.250.243.131"));     // Single node address
-        vSeeds.push_back(CDNSSeedData("45.77.239.108", "45.77.239.108"));         // Single node address
-		vSeeds.push_back(CDNSSeedData("45.32.235.211", "45.32.235.211"));         // Single node address
-		vSeeds.push_back(CDNSSeedData("107.191.44.102", "107.191.44.102"));       // Single node address
-		vSeeds.push_back(CDNSSeedData("108.61.188.67", "108.61.188.67"));         // Single node address
-		vSeeds.push_back(CDNSSeedData("45.77.1.151", "45.77.1.151"));             // Block Explorer
+	vSeeds.push_back(CDNSSeedData("94.177.245.36", "94.177.245.36"));
+    vSeeds.push_back(CDNSSeedData("86.105.53.115", "86.105.53.115"));
+	vSeeds.push_back(CDNSSeedData("94.177.225.195", "94.177.225.195"));
+	vSeeds.push_back(CDNSSeedData("89.40.118.48", "89.40.118.48"));
+	vSeeds.push_back(CDNSSeedData("89.40.119.159", "89.40.119.159"));
+	vSeeds.push_back(CDNSSeedData("89.36.219.109", "89.36.219.109"));
+	vSeeds.push_back(CDNSSeedData("86.105.48.150", "86.105.48.150"));
+	vSeeds.push_back(CDNSSeedData("86.105.49.119", "86.105.49.119"));
+	vSeeds.push_back(CDNSSeedData("86.105.50.160", "86.105.50.160"));
+	vSeeds.push_back(CDNSSeedData("89.40.124.239", "89.40.124.239"));
+	vSeeds.push_back(CDNSSeedData("89.40.125.9", "89.40.125.9"));
+	vSeeds.push_back(CDNSSeedData("86.105.52.194", "86.105.52.194"));
+	vSeeds.push_back(CDNSSeedData("78.97.54.58", "78.97.54.58"));
+	vSeeds.push_back(CDNSSeedData("45.32.210.221", "45.32.210.221"));
+	vSeeds.push_back(CDNSSeedData("104.248.244.214", "104.248.244.214"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 75);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 30);
